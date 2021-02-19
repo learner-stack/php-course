@@ -16,6 +16,12 @@
 		foreach($products as $key=>$value){
 			echo "<p>A ".$key." costs $".$value."</p>";
 		}
+		echo "<h1>Items that you can afford</h1>";
+		foreach($products as $key=>$value){
+			if($value <= $credit){
+				echo "<p>".$key."</p>";
+			}
+		}
 		
 
 	?>
