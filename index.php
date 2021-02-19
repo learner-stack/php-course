@@ -23,6 +23,18 @@
 			}
 		}
 		
+		$amount = 800;
+		$taxRate = 0.0825;
+		$addedTax = $amount * $taxRate;
+		echo $addedTax;
+		echo "<br/>";
+
+		function tax_Calc($amount,$tax){
+			$calculate_tax = $amount * $tax;
+			$amount = round($calculate_tax+$amount,2);
+			return $amount;
+		}
+		echo tax_Calc(750,0.223);
 
 	?>
 
